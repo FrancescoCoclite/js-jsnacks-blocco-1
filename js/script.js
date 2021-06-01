@@ -60,7 +60,7 @@ for (var i=0; i<listaCognomi.length; i++){
 
     if (cognomeCapitalized == listaCognomi[i]){
         document.getElementById("invitati").innerHTML = cognomeCapitalized + ' Sei un invitato'
-    } else if (cognomeCapitalized != listaCognomi[i]){
+    } else{
         document.getElementById("invitati").innerHTML = cognomeCapitalized + ' Non sei invitato'
     }
 }
