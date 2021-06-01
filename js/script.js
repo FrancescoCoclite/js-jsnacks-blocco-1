@@ -45,4 +45,22 @@
 // }
 // console.log(array);
 
+// Esercizio N.4
 
+// In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby, chiedi all’utente il suo nome e comunicagli se può partecipare o no alla festa.
+
+var cognome = prompt('Inserisci il tuo cognome');
+
+var listaCognomi = ['Rossi','Blu','Gialli','Neri'];
+
+var cognomeCapitalized = cognome.charAt(0).toUpperCase() + cognome.slice(1).toLowerCase();
+console.log(cognomeCapitalized);
+
+for (var i=0; i<listaCognomi.length; i++){
+
+    if (cognomeCapitalized == listaCognomi[i]){
+        document.getElementById("invitati").innerHTML = cognomeCapitalized + ' Sei un invitato'
+    } else if (cognomeCapitalized != listaCognomi[i]){
+        document.getElementById("invitati").innerHTML = cognomeCapitalized + ' Non sei invitato'
+    }
+}
